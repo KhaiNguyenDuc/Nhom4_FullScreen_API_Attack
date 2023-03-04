@@ -20,7 +20,7 @@ Hà Vĩ Khang - 20110657
 
 `git clone https://github.com/KhaiNguyenDuc/Nhom4_FullScreen_Acttack.git`
 
-Cài đặt thêm Extension Live Server
+Cài đặt thêm Visual Studio Code (VSC) và Extension Live Server của VSC
 ![markdown](./img/RunProject/1.png)
 Hoặc để sử dụng online, không cần cài đặt thêm thì ta sử dụng link website đã deploy
 
@@ -31,6 +31,7 @@ Nếu chúng ta sử dụng online thì click vào link trên ở *Cách cài đ
 Nếu chúng ta chạy local
 
 ### Bước 1:
+Mở project với VSC
 Bấm vào biểu tượng live server ![markdown](./img/RunProject/2.png) ở góc phải trên visual studio code
 Trình duyệt sẽ chạy website lên ở localhost có giao diện như sau:
 ![markdown](./img/RunProject/3.png)

@@ -17,10 +17,13 @@ Hà Vĩ Khang - 20110657
 
 # Cách cài đặt
 Để cài đặt project chúng ta có thể clone từ git hub qua câu lệnh
+
 `git clone https://github.com/KhaiNguyenDuc/Nhom4_FullScreen_Acttack.git`
+
 Cài đặt thêm Extension Live Server
 ![markdown](./img/RunProject/1.png)
 Hoặc để sử dụng online, không cần cài đặt thêm thì ta sử dụng link website đã deploy
+
 **https://nhom4-fullscreen-api-acttack.herokuapp.com/**
 
 # Cách sử dụng

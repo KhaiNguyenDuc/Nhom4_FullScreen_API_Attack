@@ -7,13 +7,50 @@
 
   <title>Fullscreen API Attack</title>
   <meta name="description" content="">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/facebox.css">
 </head>
 <body>
 
-  <a class="spoofLink" href="https://online.hcmute.edu.vn/">Online HCMUTE</a>
+  <header class="header" id="header-main">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Review trường đại học</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Trang chủ <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Thông tin</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Bài viết</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Đóng góp</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- For demo purpose -->
+<div class="container">
+  <div class="pt-5 text-white">
+      <header class="py-5 mt-5" >
+          <h1 class="display-4">Trường đại học Sư phạm kỹ thuật TPHCM</h1>
+          <p class="lead mb-0">Trường đại học số 1 võ văn ngân</p>
+          <p class="lead mb-0">Đường link 
+            <a class="spoofLink text-white" href="https://online.hcmute.edu.vn/"><u> Online HCMUTE</u></a>
+        
+          </p>
+      </header>
+      <div class="py-5">
+          <p>Đại học Sư phạm kỹ thuật Thành phố Hồ Chí Minh là một trong những trường Đại học có điểm chuẩn đầu vào cao chuyên đào tạo các ngành học liên quan đến công nghệ, kỹ thuật và kiến trúc. Đăng ký tham gia học tập tại trường, bạn sẽ có cơ hội lựa chọn nhiều ngành nghề với nhiều hệ đào tạo quốc tế khác nhau. Những năm qua, trường Sư phạm Kỹ thuật luôn có tỷ lệ phần trăm sinh viên có việc làm rất cao (98%) và nhiều thành tích học thuật nổi trội khác. Hãy cùng khám phá Đại học Sư phạm kỹ thuật Thành phố Hồ Chí Minh để biết được những điều thú vị về ngôi trường này nhé!</p>
+      </div>
+      <div class="py-5">
+          <p>Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh vốn dĩ là Ban Cao đẳng Sư phạm Kỹ thuật được thành lập vào năm 1962. Năm 1974, song song cùng việc mở thêm Viện đại học Bách khoa Thủ Đức, trường đổi tên thành Đại học Giáo dục Thủ Đức</p>
+      </div>
+  </div>
+</div>
+
+  
 
   <div id="spoofHeader">
     <div id="spoofMenu"></div>
@@ -45,6 +82,17 @@
 
   <script src="js/script.js"></script>
 
+  <script>
+    $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+  </script>
 
 </body>
 </html>

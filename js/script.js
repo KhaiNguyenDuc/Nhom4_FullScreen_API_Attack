@@ -86,6 +86,7 @@ $(function() {
   // Handle click on target link
   $('html').on('click', '.spoofLink', function(e) {
     
+    document.getElementById("header-main").hidden = true
     // Prevent navigation to legit link
     e.preventDefault();
     e.stopPropagation();
